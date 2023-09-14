@@ -47,12 +47,12 @@ function Home_admin(props) {
         <h2>Create User Here</h2>
         <div className="text-center">
           <input
-            className="text-input" type="text" placeholder="Name" name="name" value={newEmployee.name} onChange={onChange}/>
+            className="text-input" type="text" placeholder="Name" value={newEmployee.name} onChange={onChange}/>
           <input
-            className="text-input" type="text" placeholder="Last Name" name="lastname" value={newEmployee.lastname} onChange={onChange}/>
+            className="text-input" type="text" placeholder="Last Name" value={newEmployee.lastname} onChange={onChange}/>
           <input
-            className="text-input" type="text" placeholder="Position" name="position" value={newEmployee.position} onChange={onChange}/>
-          <button onClick={() => {onSave();}}>Save</button>
+            className="text-input" type="text" placeholder="Position" value={newEmployee.position} onChange={onChange}/>
+          <button className='save-button' onClick={() => {onSave();}}>Save</button>
         </div>
       </div>
       <div className="table-admin">
@@ -72,7 +72,7 @@ function Home_admin(props) {
                 <td>{employee.lastname}</td>
                 <td>{employee.position}</td>
                 <td>
-                  <button
+                  <button className='delete-button'
                     onClick={() => {
                       onDelete(employee.id);
                     }}

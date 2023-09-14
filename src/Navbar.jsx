@@ -8,15 +8,12 @@ import Owner from './Owner.jsx';
 
 function Navbar() {
   return (
-    <ul>
-        <li>
-          <Link to="/">Home</Link>
-        </li>
-        <li>
-          <Link to="/owner">Owner</Link>
-        </li>
-    </ul>
-    
+    <>
+      <div className='topnav'>
+        <a href="/">Home</a>
+        <a href="/owner">Owner</a>
+      </div>
+    </>
   )
 }
 

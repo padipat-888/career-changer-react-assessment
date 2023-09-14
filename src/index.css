@@ -13,79 +13,111 @@ h1{
     display: flex;
     justify-content: space-around;
 }
-  
-  .navbar-list{
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    text-align: center;
-    justify-content: flex-end;
-  }
-  .navbar-list li {
-    margin-right: 20px;
-    
-  }
-  .navbar{
-    border-bottom: 1px solid gray;
-  }
-  
-  table, th, td {
-    border: 1px solid;
-    padding: 14px;
-  }
-  table{
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 50px;
-  }
-  
-  .text-center{
-    text-align: center;
-  }
-  
-  .text-input{
-    margin: 16px;
-  }
-  
-  .create-user, h2{
-    text-align: center;
-  }
-  
-  body{
-    background-color: rgb(237, 234, 229);
-  
-  }
-  
-  a {
-    font-weight: 500;
-    color: #090909;
-    text-decoration: inherit;
-  }
-  a:hover {
-    color: #0511f5;
-  }
-  
-  .sector, .text-content{
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-  button {
-    border-radius: 8px;
-    border: 1px solid transparent;
-    padding: 0.6em 1.2em;
-    font-size: 1em;
-    font-weight: 500;
-    font-family: inherit;
-    background-color: white;
-    cursor: pointer;
-    transition: border-color 0.25s;
-  }
-  button:hover {
-    border-color: #000000;
-  }
-  button:focus,
-  button:focus-visible {
-    outline: 4px auto -webkit-focus-ring-color;
-  }
+
+.save-button{
+  color: #ffffff;
+  background-color: #2f78ff;
+}
+
+.delete-button{
+  color: red;
+}
+
+.topnav{
+  display: flex;
+  justify-content: flex-end;
+  text-align: center;
+  border-bottom: 1px solid gray;
+}
+
+.topnav a {
+  float: left;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: rgb(113, 61, 235);
+}
+
+th, td {
+  border: 1px solid;
+  text-align: center;
+  padding: 10px;
+}
+th{
+  background-color: rgb(237, 234, 229);
+}
+table{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  background-color: white;
+  width: 50%;
+  border-collapse: collapse;
+}
+
+tr:hover {background-color: rgb(210, 226, 248);}
+
+.text-center{
+  text-align: center;
+}
+
+.text-input{
+  margin: 16px;
+}
+
+.create-user, h2{
+  text-align: center;
+}
+
+body{
+  background-color: rgb(237, 234, 229);
+
+}
+
+a {
+  font-weight: 500;
+  color: #090909;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #0511f5;
+}
+
+.sector, .text-content{
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: white;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+button:hover {
+  border-color: #000000;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.owner{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
